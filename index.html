@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phone Hunter</title>
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="bg-danger text-center p-2">
+        <h1>Welcome To My Phone Hunter</h1>
+    </header>
+    <main class="container">
+        <!-- search section -->
+        <section>
+            <div class="mb-3 mt-4 w-50 d-flex">
+                <input id="btn-field" type="email" class="form-control" id="exampleFormControlInput1" placeholder="    Search ">
+                <button id="btn-search" class="btn btn-primary">Search</button>
+              </div>
+        </section>
+        <!-- display card section -->
+        <section>
+            <!-- card -->
+                <div id="phone-container" class="row row-cols-1 row-cols-md-3 g-4">
+                    
+                  </div>
+                  <div id="not-found-message" class="mt-4 d-none">
+                    <h3 class="text-warning">No phone hound, please try a new search</h3>
+                  </div>
+                  <div id="show-all" class="text-center d-none">
+                    <div id="btn-show-all" class="btn btn-primary">Show All</div>
+                  </div>
+            <!-- card -->
+        </section>
+        <!-- spinner -->
+        <section id="loader" class="d-none">
+          <div style="height: 500px;" class="d-flex justify-content-center align-items-center">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </section>
+        <!-- modal section -->
+        <!-- Button trigger modal -->
+            
+            <!-- Modal -->
+            <div class="modal fade" id="phoneDetailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div id="Phone-details" class="modal-body">
+                   
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </main>
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- app js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
